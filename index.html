@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>play1.1</title>
+<title>text.1.1</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+	   <link rel="stylesheet" href="css/style.css">
 <style type="text/css">
 	/* 背景颜色-图片*/
 	body {  
@@ -42,7 +42,8 @@
 	
 	/*设置标题div*/
 	#DIV{
-		margin: 5px;/* 调减边距 */
+		margin-top: 50px;/* 调减边距 */
+		
 		padding: 5px;
 		overflow: outo;/* 内容溢出后滚轮查看 */
 	}
@@ -50,15 +51,16 @@
 		border:3px #158631 dashed;	
 		float:left;
 			 text-align: center; /* 水平居中 */
-			 width: 200px;
+			 width: 20%;
 	}
 	.div2{
 			border:3px #158631 dashed;	
 			float:right;
-			width: 200px;
+			width: 20%;
 				 text-align: center; /* 水平居中 */
 	}
 	.div3{
+	
 			border:3px #158631 dashed;	
 		 text-align: center; /* 水平居中 */
 	}
@@ -116,7 +118,7 @@ margin: 10px;
             /* 鼠标移到照片上方*/
             .box1:hover{
                 /* 旋转 rotate: ;*/
-                transform: rotate(720deg) scale(1.22);;
+                transform: rotate(720deg) scale(1);;
                 /*缩放scale:*/
                 /*换一张照片*/
                 background: url(https://pic.imgdb.cn/item/66a50ca0d9c307b7e9da8bc2.webp);
@@ -145,7 +147,7 @@ margin: 10px;
 			        /* 鼠标移到照片上方*/
 			        .box2:hover{
 			            /* 旋转 rotate: ;*/
-			            transform: rotate(720deg) scale(1.22);;
+			            transform: rotate(720deg) scale(1);;
 			            /*缩放scale:*/
 			            /*换一张照片*/
 			            background: url(https://pic.imgdb.cn/item/66a5f556d9c307b7e98e88bf.webp);
@@ -158,10 +160,16 @@ margin: 10px;
 
 /*顶部跳转链接目录*/
 .MAXbox {  
+	top: 0; /* 距离页面顶部0px */
+	left: 0; /* 距离页面左侧0px */
+	 position: fixed; /* 固定头部 */
+	 z-index: 1000; /* 确保头部位于其他内容之上 */
+	 height: 50px;
+	width: 100%; /* 占满页面宽度 */
     background-color: rgba(162, 162, 162, 0.8); /* 背景颜色 */  
     display: flex; /* 使用flex布局 */  
     color: red; /* 文本颜色 */  
-    align-items: center; /* 垂直居中 */  
+   /* align-items: center; */ /* 垂直居中 */  
     justify-content: space-around; /* 水平间距 */  
    /* flex-wrap: wrap; */ /* 允许换行 */  
     /* height: 100vh; *//* 使容器占满整个视口高度 */  
@@ -214,7 +222,7 @@ ul li{
 <div id="pic">
 <!-- 引言外部链接内容 -->
 	<div class="box1"></div>
-	        <div class="a-box1"></div>
+	        <!-- <div class="a-box1"></div> -->
 <div class="out">
 
 <!-- 提示：您可以把需要的文本放置在 <iframe> 和 </iframe> 之间，这样就可以应对不支持 <iframe> 的浏览器。
@@ -225,7 +233,7 @@ ul li{
 </iframe>
 </div>
 <div class="box2"></div>
-        <div class="a-box2"></div>
+        <!-- <div class="a-box2"></div> -->
 </div>
 
 <!-- 底部半透明分块链接 -->
